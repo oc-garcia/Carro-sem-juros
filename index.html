@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+    <title>Sonho concessionária</title>
+  </head>
+  <body>
+    <header>
+      <h1>Promoção seu carro novo sem juros!</h1>
+      <h2>Faça o financiamento do seu carro</h2>
+    </header>
+    <main>
+        <section>
+            <h3>Regras da Promoção</h3>
+            <ul>
+                <li>A entrada deve ser de no mínimo 30% e no máximo de 90%</li>
+                <li>A quantidade de parcelas deve ser de 3 a 24x</li>
+            </ul>
+        </section>
+      <section>
+        <p>Vamos começar?</p>
+
+        <label class="label__formulario" for="veiculo">Informe o veículo desejado</label></br>
+        <input type="text" class="campoVeiculo" id="veiculo" required/></br>
+
+        <label class="label__formulario" for="valor">Informe o valor do veículo</label></br>
+        <input type="number" class="campoVeiculo" id="valor" required/></br>
+
+        <label class="label__formulario" for="valor">Informe o % de entrada</label></br>
+        <input type="number" class="campoVeiculo" id="entrada" min="30" max="90" required/></br>
+
+        <label class="label__formulario" for="parcelas">Informe o nr. de parcelas</label></br>
+        <input type="number" class="campoVeiculo" id="parcelas" min="3" max="24" required/></br>
+
+        <button type="submit" id="btnVeiculo" onclick="calculaCondicoes()">Carregar condições</button>
+      </section>
+      <section>
+        <div id="resultadoPorcentagem"></div>
+        <div id="resultadoParcelas"></div>
+      </section>
+      <section>
+        <button type="submit" id="btnReset" onclick="resetCondicoes()" disabled>Resetar condições</button>
+      </section>
+    </main>
+    <footer>
+        <p>© Octavio 2022</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

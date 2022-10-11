@@ -1,0 +1,12 @@
+body {
+  padding: 2rem;
+}
+
+.campoVeiculo {
+  width: 35%;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.btnVeiculo {
+  margin: 1rem;
+}
